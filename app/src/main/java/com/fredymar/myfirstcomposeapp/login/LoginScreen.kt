@@ -1,10 +1,14 @@
 package com.fredymar.myfirstcomposeapp.login
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
@@ -14,13 +18,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(
-    widthDp = 70,
-    heightDp = 50,
-    showBackground = true,
-    showSystemUi = true,
-    device = Devices.PIXEL_4
-)
+@Preview()
 
 @Composable
 fun ExamplePreview(){
@@ -29,5 +27,8 @@ fun ExamplePreview(){
 
 @Composable
 fun Example(a:String){
-    Text("Fredymar $a")
+    Text("Fredymar y $a", modifier = Modifier
+        .padding(70.dp)
+        .background(Color.Magenta)
+    )
 }
