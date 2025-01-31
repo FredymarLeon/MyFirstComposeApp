@@ -11,6 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.motionEventSpy
 import androidx.compose.ui.tooling.preview.Preview
 import com.fredymar.myfirstcomposeapp.components.layout.MyBox
 import com.fredymar.myfirstcomposeapp.components.layout.MyColumn
@@ -24,7 +25,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
-                    MyColumn()
+                    MyColumn(Modifier.padding(innerPadding))
                 }
             }
         }
