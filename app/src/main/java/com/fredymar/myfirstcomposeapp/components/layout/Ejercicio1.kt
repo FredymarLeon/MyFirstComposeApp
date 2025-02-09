@@ -26,7 +26,7 @@ fun Ejercicio1 (modifier: Modifier){
             Box(modifier = Modifier.weight(1f).height(290.dp).background(Color.Red), contentAlignment = Alignment.Center){
                 Text(text = "Ejemplo 2")
             }
-            Spacer(modifier = Modifier.height(20.dp))
+            Spacer(modifier = Modifier.width(20.dp))
             Box(modifier = Modifier.weight(1f).height(290.dp).background(Color.Green), contentAlignment = Alignment.Center){
                     Text(text = "Ejemplo 3")
             }
