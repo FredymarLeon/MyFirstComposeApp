@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
@@ -20,14 +21,19 @@ fun Ejercicio1 (modifier: Modifier){
         Box(modifier= Modifier.weight(1f).fillMaxWidth().background(Color.Cyan), contentAlignment = Alignment.Center){
             Text(text = "Ejemplo 1")
         }
-        Box(modifier = Modifier.weight(1f).fillMaxWidth()){
-            Row {
-                Box(modifier = Modifier.weight(1f).height(290.dp).background(Color.Red))
-                Box(modifier = Modifier.weight(1f).height(290.dp).background(Color.Green), contentAlignment = Alignment.Center){
+        Spacer(modifier = Modifier.height(20.dp))
+        Row(modifier = Modifier.weight(1f).fillMaxWidth()) {
+            Box(modifier = Modifier.weight(1f).height(290.dp).background(Color.Red), contentAlignment = Alignment.Center){
+                Text(text = "Ejemplo 2")
+            }
+            Spacer(modifier = Modifier.height(20.dp))
+            Box(modifier = Modifier.weight(1f).height(290.dp).background(Color.Green), contentAlignment = Alignment.Center){
                     Text(text = "Ejemplo 3")
-                }
             }
         }
-        Box(modifier = Modifier.weight(1f).fillMaxWidth().background(Color.Magenta))
+        Spacer(modifier = Modifier.height(20.dp))
+        Box(modifier = Modifier.weight(1f).fillMaxWidth().background(Color.Magenta), contentAlignment = Alignment.Center){
+            Text(text = "Ejemplo 4")
+        }
     }
 }
