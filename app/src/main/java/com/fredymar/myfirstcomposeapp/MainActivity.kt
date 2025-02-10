@@ -10,12 +10,14 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.fredymar.myfirstcomposeapp.components.layout.ConstraintExampleGuide
 import com.fredymar.myfirstcomposeapp.components.layout.ConstraintLayoutEjercicio2
 import com.fredymar.myfirstcomposeapp.components.layout.Ejercicio1
 import com.fredymar.myfirstcomposeapp.components.layout.MyBasicConstraintLayout
 import com.fredymar.myfirstcomposeapp.components.layout.MyComplexLayout
 import com.fredymar.myfirstcomposeapp.components.layout.MyRow
 import com.fredymar.myfirstcomposeapp.login.Greeting
+import com.fredymar.myfirstcomposeapp.state.MyState
 import com.fredymar.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,7 +27,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
-                    ConstraintLayoutEjercicio2(Modifier.padding(innerPadding))
+                    MyState(Modifier.padding(innerPadding))
                 }
             }
         }

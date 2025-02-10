@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 
@@ -38,5 +39,13 @@ fun MyBasicConstraintLayout(modifier: Modifier){
             top.linkTo(parent.top)
             start.linkTo(parent.start)
         })
+    }
+}
+
+@Composable
+fun ConstraintExampleGuide(modifier: Modifier){
+    ConstraintLayout(modifier = Modifier.fillMaxSize()) {
+        val boxRed = createRef()
+        
     }
 }
